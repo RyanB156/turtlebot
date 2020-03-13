@@ -1,0 +1,11 @@
+Issues setting up turtlebot:
+	Finding an install with ROS and can connect to Poly Secure: ubiquity
+	Wrong time on RPi: sync with time server
+	Network configuration: .bashrc sourced /etc/ubiquity/env.sh which reset 
+        the value of ROS_MASTER_URI. Move this before export statements 
+        or delete
+	Cannot find AF_INET ADDR: Set IP and hostname in /etc/hosts
+
+If the turtlebot's IP address changes, be sure to edit the turtlebot's .bashrc
+    file to set ROS_IP to the new IP and edit /etc/hosts on all machines
+	

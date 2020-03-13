@@ -1,0 +1,19 @@
+Purpose - Provide a demonstration to high school students to show that
+  we do fun projects at Poly.
+
+Idea - Simple. Have one robot move around the room while another one follows.
+  Then simulate an attack that severs the communication between the robots.
+  This makes the one following act erratically
+
+Implementation - 
+  -Global-
+  New package for the python scripts (demo)
+  -Parent-
+  New publisher that will send data to the child (what format?)
+  Listen to cmd_vel for the parent to send to the child (possibly)
+
+  -Child-
+  Listen for information which controls its movement
+  New publisher to send commands on cmd_vel
+  End communication -> move randomly and crash
+  

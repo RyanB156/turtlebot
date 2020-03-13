@@ -1,0 +1,16 @@
+C: roscore
+T: roslaunch turtlebot3_bringup turtlebot3_robot.launch
+C: roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch #keyboard ctrl
+
+#Visualization
+roslaunch turtlebot3_bringup turtlebot3_model.launch
+
+# Mapping
+C: roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping # Begin mapping the room
+C: rosrun map_server map_saver -f ~/map # Save map
+
+#Navigation
+C: roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml #Open rvis and can set navigation points for robot
+
+# 1. Estimate initial pose
+# 2. Place waypoints with arrow in ending direction
