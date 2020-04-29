@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtlebot3_example_generate_messages_py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/__init__.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/turtlebotmaster/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/remote/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/turtlebotmaster/catkin_ws/build
+CMAKE_BINARY_DIR = /home/remote/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -87,18 +98,6 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -111,16 +110,17 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/turtlebotmaster/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebotmaster/catkin_ws/build/CMakeFiles /home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/progress.marks
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebotmaster/catkin_ws/build/CMakeFiles 0
+	cd /home/remote/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/remote/catkin_ws/build/CMakeFiles /home/remote/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/progress.marks
+	cd /home/remote/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/remote/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/clean
+	cd /home/remote/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/preinstall
+	cd /home/remote/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/preinstall
+	cd /home/remote/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/turtlebotmaster/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/remote/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/rule:
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/rule
+	cd /home/remote/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/rule
 .PHONY : turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/rule
 
 # Convenience name for target.
@@ -177,7 +177,7 @@ turtlebot3_description_xacro_generated_to_devel_space_: turtlebot3/turtlebot3_de
 
 # fast build rule for target.
 turtlebot3_description_xacro_generated_to_devel_space_/fast:
-	cd /home/turtlebotmaster/catkin_ws/build && $(MAKE) -f turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build.make turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build
+	cd /home/remote/catkin_ws/build && $(MAKE) -f turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build.make turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build
 .PHONY : turtlebot3_description_xacro_generated_to_devel_space_/fast
 
 # Help Target
@@ -188,11 +188,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... turtlebot3_description_xacro_generated_to_devel_space_"
 	@echo "... install/local"
-	@echo "... install/strip"
+	@echo "... install"
 	@echo "... test"
 .PHONY : help
 
@@ -205,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/turtlebotmaster/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/remote/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
-prefix=/home/turtlebotmaster/catkin_ws/devel
+prefix=/home/remote/catkin_ws/devel
 
 Name: turtlebot3_slam
 Description: Description of turtlebot3_slam
 Version: 1.2.1
-Cflags: -I/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_slam/include
-Libs: -L/home/turtlebotmaster/catkin_ws/devel/lib 
+Cflags: -I/home/remote/catkin_ws/src/turtlebot3/turtlebot3_slam/include
+Libs: -L${prefix}/lib 
 Requires: roscpp sensor_msgs

@@ -1,8 +1,8 @@
-# Install script for directory: /home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation
+# Install script for directory: /home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/turtlebotmaster/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/remote/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,26 +33,26 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/remote/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigation.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation/cmake" TYPE FILE FILES
-    "/home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig.cmake"
-    "/home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig-version.cmake"
+    "/home/remote/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig.cmake"
+    "/home/remote/catkin_ws/build/turtlebot3/turtlebot3_navigation/catkin_generated/installspace/turtlebot3_navigationConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE FILE FILES "/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE FILE FILES "/home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_navigation" TYPE DIRECTORY FILES
-    "/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation/launch"
-    "/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation/maps"
-    "/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation/param"
-    "/home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_navigation/rviz"
+    "/home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation/launch"
+    "/home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation/maps"
+    "/home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation/param"
+    "/home/remote/catkin_ws/src/turtlebot3/turtlebot3_navigation/rviz"
     )
 endif()
 

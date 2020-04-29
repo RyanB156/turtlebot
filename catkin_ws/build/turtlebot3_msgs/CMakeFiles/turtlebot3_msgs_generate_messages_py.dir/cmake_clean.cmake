@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtlebot3_msgs_generate_messages_py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_Sound.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_SensorState.py"
-  "/home/turtlebotmaster/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/__init__.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_SensorState.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_Sound.py"
+  "/home/remote/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

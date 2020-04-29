@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/turtlebotmaster/catkin_ws/install/setup.sh
+    local-name: /home/remote/catkin_ws/install/setup.sh

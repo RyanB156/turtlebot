@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/turtlebotmaster/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/remote/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/turtlebotmaster/catkin_ws/build
+CMAKE_BINARY_DIR = /home/remote/catkin_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_bringup && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/remote/catkin_ws/build/turtlebot3/turtlebot3_bringup && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/turtlebotmaster/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/turtlebotmaster/catkin_ws/src /home/turtlebotmaster/catkin_ws/src/turtlebot3/turtlebot3_bringup /home/turtlebotmaster/catkin_ws/build /home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_bringup /home/turtlebotmaster/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/remote/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/remote/catkin_ws/src /home/remote/catkin_ws/src/turtlebot3/turtlebot3_bringup /home/remote/catkin_ws/build /home/remote/catkin_ws/build/turtlebot3/turtlebot3_bringup /home/remote/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 
